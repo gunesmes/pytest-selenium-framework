@@ -79,21 +79,19 @@ To write new tests using this framework, follow these steps:
 
 Test result:
 ```bash
-(3.10.8) ➜  testing-framework git:(main) pytest
-====================================================================================== test session starts ======================================================================================
-platform darwin -- Python 3.10.8, pytest-8.3.5, pluggy-1.5.0 -- /Users/mesutgunes/.pyenv/versions/3.10.8/bin/python
+(.venv) ➜  pytest-selenium-framework git:(main) ✗ pytest -v --mobile_emulation=iphone_12 src/tests/test_browse_page.py
+============================================================================================== test session starts ===============================================================================================
+platform darwin -- Python 3.10.8, pytest-8.3.5, pluggy-1.5.0 -- /Users/mesutgunes/projects/personal/pytest-selenium-framework/.venv/bin/python3
 cachedir: .pytest_cache
-rootdir: /Users/mesutgunes/projects/personal/sporty/new-api/testing-framework
+metadata: {'Python': '3.10.8', 'Platform': 'macOS-13.4-arm64-arm-64bit', 'Packages': {'pytest': '8.3.5', 'pluggy': '1.5.0'}, 'Plugins': {'html': '4.1.1', 'metadata': '3.1.1', 'cov': '6.1.1'}, 'JAVA_HOME': '/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home'}
+rootdir: /Users/mesutgunes/projects/personal/pytest-selenium-framework
 configfile: pytest.ini
-testpaths: tests
-collected 4 items                                                                                                                                                                               
+plugins: html-4.1.1, metadata-3.1.1, cov-6.1.1
+collected 1 item                                                                                                                                                                                                 
 
-tests/test_api.py::test_list_all_authors_using_author PASSED                                                                                                                              [ 25%]
-tests/test_api.py::test_list_all_authors_using_authors PASSED                                                                                                                             [ 50%]
-tests/test_api.py::test_search_by_author PASSED                                                                                                                                           [ 75%]
-tests/test_api.py::test_search_by_author_return_output_fields_format_as_text PASSED                                                                                                       [100%]
+src/tests/test_browse_page.py::TestBrowsePage::test_streamering_starcraft_ii PASSED                                                                                                                        [100%]
 
-======================================================================================= 4 passed in 3.84s =======================================================================================
+=============================================================================================== 1 passed in 13.15s ===============================================================================================
 ```
 
 - **Running tests with mobile emulation:**
