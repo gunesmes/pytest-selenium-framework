@@ -16,6 +16,7 @@ class TestBrowsePage:
         self.page.scroll_down(0, 100)
         self.page.scroll_down(0, 100)
         self.page.select_one_streamer()
+        # I'ven't seen any popup to handle
         self.page.wait_until_streamering_loaded()
         self.page.take_screenshot("test_streamer_starcraft_ii.png")
         
