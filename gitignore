@@ -1,0 +1,42 @@
+# Bytecode / distribution / log files
+__pycache__/
+*.pyc
+*.pyd
+*.pyo
+*.egg-info/
+dist/
+build/
+logs/
+*.log
+
+# Virtual environment
+.venv/
+venv/
+env/
+ENV/
+myvenv/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+.pytest_cache
+
+# Editor/IDE-related files
+.idea/
+.vscode/
+*.swp
+~$*.*
+*.bak
+
+# Packages
+node_modules/
+packages/
+
+# Secrets
+secrets.ini
+*.key
+*.pem
+
+# Temporary files
+*.tmp
+tmp/
