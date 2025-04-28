@@ -46,13 +46,13 @@ pytest-selenium-framework
 
 ## Usage Examples
 
-- **Running a specific test:**
+- **Running a specific test with Iphone 12:**
   ```
-  pytest src/tests/test_home_page.py::test_home_page_title
+  pytest --mobile_emulation=iphone_12 src/tests/test_home_page.py
   ```
 
 - **Running tests with mobile emulation:**
-  Modify the `driver_factory.py` to set the desired mobile device settings.
+  Modify the `driver_factory.py` to set the desired mobile device settings. Valid options are `iphone_12`, `iphone_15`, `samsung_galaxy_s20_ultra`, `pixel_7`, or `None` to disable mobile emulation.
 
 ## Contributing
 Contributions are welcome! Please submit a pull request or open an issue for any enhancements or bug fixes.
