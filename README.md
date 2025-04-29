@@ -24,14 +24,14 @@ pytest-selenium-framework
 **Framework Structure Explanation:**
 
 *   **`src/pages`:** This directory contains the Page Objects. Each page in your web application should have a corresponding Page Object class. Page Objects encapsulate the elements and actions that can be performed on a specific page.
-    *   [`base_page.py`](base_page.py ): This file defines the `BasePage` class, which serves as the base class for all Page Objects. It provides common methods for interacting with web elements, such as `find_element`, `click`, `send_keys`, and `navigate_to`.
-    *   [`home_page.py`](home_page.py ): This file contains the `HomePage` class, which is an example Page Object for the home page of your web application. It inherits from `BasePage` and defines methods specific to the home page, such as `get_title` and `click_login`.
+    *   [`base_page.py`](src/pages/base_page.py ): This file defines the `BasePage` class, which serves as the base class for all Page Objects. It provides common methods for interacting with web elements, such as `find_element`, `click`, `send_keys`, and `navigate_to`.
+    *   [`browse_page.py`](src/pages/browse_page.py ): This file contains the `HomePage` class, which is an example Page Object for the home page of your web application. It inherits from `BasePage` and defines methods specific to the home page, such as `get_title` and `click_login`.
 *   **`src/tests`:** This directory contains the test files. Each test file should contain one or more test functions that verify the behavior of your web application.
-    *   [`conftest.py`](conftest.py ): This file is used to define pytest configuration settings and fixtures. Fixtures are functions that provide a fixed baseline for your tests, such as a WebDriver instance or a logged-in user.
-    *   [`test_home_page.py`](test_home_page.py ): This file contains example test functions for the home page of your web application. It uses the `HomePage` Page Object to interact with the home page and verify its behavior.
+    *   [`conftest.py`](src/tests/conftest.py ): This file is used to define pytest configuration settings and fixtures. Fixtures are functions that provide a fixed baseline for your tests, such as a WebDriver instance or a logged-in user.
+    *   [`test_browse_page.py`](src/tests/test_browse_page.py ): This file contains example test functions for the home page of your web application. It uses the `HomePage` Page Object to interact with the home page and verify its behavior.
 *   **`src/utils`:** This directory contains utility files that are used by the framework.
-    *   [`config.py`](config.py ): This file defines configuration settings for the framework, such as the base URL of your web application and the timeout values for WebDriver operations.
-    *   [`driver_factory.py`](driver_factory.py ): This file defines the `DriverFactory` class, which is responsible for creating and managing WebDriver instances. It supports different browsers and mobile emulation settings.
+    *   [`config.py`](src/utils/config.py ): This file defines configuration settings for the framework, such as the base URL of your web application and the timeout values for WebDriver operations.
+    *   [`driver_factory.py`](src/utils/driver_factory.py ): This file defines the `DriverFactory` class, which is responsible for creating and managing WebDriver instances. It supports different browsers and mobile emulation settings.
 
 ## Writing New Tests
 
