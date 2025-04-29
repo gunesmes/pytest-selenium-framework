@@ -46,12 +46,8 @@ To write new tests using this framework, follow these steps:
 ## Setup Instructions
 
 1. **Clone the repository:**
-
-## Setup Instructions
-
-1. **Clone the repository:**
    ```
-   git clone https://github.com/yourusername/pytest-selenium-framework.git
+   git clone https://github.com/gunesmes/pytest-selenium-framework.git
    cd pytest-selenium-framework
    ```
 
